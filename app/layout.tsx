@@ -20,7 +20,8 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
             }}
         ></div>
         <ThreeBackground/>
-        <main className="relative z-10">{children}</main>
+
+        <main className="relative z-10 max-w-[1300px] mx-auto w-full">{children}</main>
         </body>
         </html>
     );
