@@ -4,24 +4,24 @@ import ThreeBackground from "../components/ThreeBackground";
 export default function RootLayout({children}: { children: React.ReactNode }) {
     return (
         <html lang="en">
-        <body className="relative overflow-hidden">
+        <body className="relative">
         <div
             className="fixed inset-0 z-0"
             style={{
                 background: `
       linear-gradient(
         90deg,
-        transparent 0%,
-        rgba(22, 189, 174, 0.9) 35%,
-        rgba(22, 189, 174, 0.9) 65%,
-        transparent 100%
+        transparent 5%,
+        rgba(280, 280, 280, 0.9) 48%,
+        rgba(280, 280, 280, 0.9) 52%,
+        transparent 95%
       )
     `,
             }}
         ></div>
         <ThreeBackground/>
 
-        <main className="relative z-10 max-w-[1300px] mx-auto w-full">{children}</main>
+        <main className="relative z-10 max-w-[1300px] mx-auto w-full px-6">{children}</main>
         </body>
         </html>
     );
