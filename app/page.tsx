@@ -10,7 +10,7 @@ import ContactSection from "../components/Contact";
 export default function Home() {
     return (<>
             <div
-                className="p-1 px-8 border border-white/30 rounded-full mt-7 bg-black/40 shadow-lg text-xl font-bold flex justify-between items-center">
+                className="p-1 px-8 border border-white/30 rounded-full mt-7 bg-black/60 shadow-lg text-xl font-bold flex justify-between items-center">
                 <Image
                     src={icon}
                     alt="MK Logo"
