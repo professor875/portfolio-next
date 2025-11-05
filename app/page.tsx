@@ -44,7 +44,7 @@ export default function Home() {
                 </div>
 
                 <div
-                    className="group rounded-full relative bg-black shadow-lg max-w-[400px] hover:shadow-2xl hover:shadow-[rgb(22, 189, 174)] transition-all duration-300">
+                    className="group rounded-full relative bg-black shadow-xl shadow-black max-w-[400px] hover:shadow-2xl hover:shadow-[rgb(22, 189, 174)] transition-all duration-300">
                     <Image
                         src={meImg}
                         alt="MK Logo"
