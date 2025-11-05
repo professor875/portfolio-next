@@ -83,6 +83,7 @@ export default function Home() {
                     className="bg-black/70 border-2 border-white/30 rounded-2xl p-6 shadow-md hover:shadow-lg transition">
                     <h3 className="text-xl font-semibold mb-4 text-yellow-400">☁️ DevOps & Cloud</h3>
                     <ul className="space-y-2 text-gray-300">
+                        <li>Linux (Server & CLI)</li>
                         <li>AWS (EC2, S3, etc.)</li>
                         <li>Docker</li>
                         <li>Hostinger Deployment</li>
@@ -115,9 +116,9 @@ export default function Home() {
                     className="bg-black/70 border-2 border-white/30 rounded-2xl p-6 shadow-md hover:shadow-lg transition">
                     <h3 className="text-xl font-semibold mb-4 text-white">🎨 Animations & Graphics</h3>
                     <ul className="space-y-2 text-gray-300">
-                        <li>3D & Visuals: Three.js, tsParticles / Particles.js</li>
-                        <li>Animations: Framer Motion, AOS (Animate On Scroll)</li>
-                        <li>Interactive UI: Parallax effects, smooth scroll, motion-based transitions</li>
+                        <li><b>3D & Visuals:</b> Three.js, tsParticles / Particles.js</li>
+                        <li><b>Animations:</b> Framer Motion, AOS (Animate On Scroll)</li>
+                        <li><b>Interactive UI:</b> Parallax effects, smooth scroll, motion-based transitions</li>
                     </ul>
                 </div>
             </div>
