@@ -1,6 +1,7 @@
 
 const detail = {
     email: "codephantom404@gmail.com",
+    description: "I’m one of the 9% of people worldwide who actually check their emails — go ahead, try me.",
     socials: {
         github: "https://github.com/professor875/",
         linkedin: "https://www.linkedin.com/in/meet-mubashir-khan",
@@ -17,8 +18,7 @@ export default function ContactSection() {
                 <div className="flex flex-wrap justify-between items-start gap-12">
                     <div>
                         <h2 className="text-cyan-400 text-3xl font-bold">Let's Talk</h2>
-                        <p className="text-[15px] text-white/70 mt-4 leading-relaxed">I’m one of the 9% of people
-                            worldwide who actually check their emails — go ahead, try me.</p>
+                        <p className="text-[15px] text-white/70 mt-4 leading-relaxed">{detail.description}</p>
                     </div>
                     <div>
                         <h2 className="text-cyan-400 text-base font-semibold">Email</h2>
@@ -35,7 +35,7 @@ export default function ContactSection() {
                                 </div>
                                 <a href="javascript:void(0)" className="text-sm ml-4">
                                     <small className="block text-cyan-400">Mail</small>
-                                    <span className="text-white/70 font-medium">info@example.com</span>
+                                    <span className="text-white/70 font-medium">{detail.email}</span>
                                 </a>
                             </li>
                         </ul>

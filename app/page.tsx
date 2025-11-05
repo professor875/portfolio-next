@@ -24,6 +24,7 @@ export default function Home() {
                 </div>
             </div>
 
+            {/*hero section*/}
             <div className="w-full flex-col md:flex-row flex justify-between items-center py-16 gap-5">
                 <div className="flex-1 flex justify-center flex-col xl:px-0 sm:px-16 px-6">
                     <div className="flex justify-between items-center w-full text-white mb-3">
@@ -59,14 +60,52 @@ export default function Home() {
                 </div>
             </div>
 
+            {/*skill section*/}
             <h1 className="mb-5 font-semibold sm:text-[55px] text-[45px] text-white sm:leading-[80px] leading-[80px] [text-shadow:4px_4px_4px_black]">Skills</h1>
-
             <SkillsSection/>
 
+            {/*projects*/}
             <ProjectsSection />
 
-            <hr className="border border-black w-full my-20"/>
+            {/*divider*/}
+            <div className="relative my-20">
+                <div
+                    className="w-full h-[2px]"
+                    style={{
+                        background: "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 70%)",
+                    }}
+                ></div>
 
+                <div
+                    className="w-full h-[2px] rotate-[1deg]"
+                    style={{
+                        background: "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 70%)",
+                    }}
+                ></div>
+
+                <div
+                    className="w-full h-[2px] -rotate-[1deg]"
+                    style={{
+                        background: "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 70%)",
+                    }}
+                ></div>
+
+                <div
+                    className="w-full h-[2px] rotate-[0.5deg]"
+                    style={{
+                        background: "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 70%)",
+                    }}
+                ></div>
+
+                <div
+                    className="w-full h-[2px] -rotate-[0.5deg]"
+                    style={{
+                        background: "radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 70%)",
+                    }}
+                ></div>
+            </div>
+
+            {/*contact form*/}
             <ContactSection />
         </>
     );
