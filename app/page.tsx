@@ -1,39 +1,27 @@
 import Image from "next/image";
-import Link from "next/link";
-import icon from "../public/mk.png"
-import meImg from "../public/me.png"
-import meImg1 from "../public/me1.png"
-import SkillsSection from "../components/Skills";
-import ProjectsSection from "../components/Projects";
-import ContactSection from "../components/Contact";
+import meImg from "@/public/me.png"
+import meImg1 from "@/public/me1.png"
+import SkillsSection from "@/components/Skills";
+import ProjectsSection from "@/components/Projects";
+import ContactSection from "@/components/Contact";
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
     return (<>
-            <div
-                className="p-1 px-8 border border-white/30 rounded-full mt-7 bg-black/60 shadow-lg text-xl font-bold flex justify-between items-center">
-                <Image
-                    src={icon}
-                    alt="MK Logo"
-                    className="w-[70px] scale-180"
-                />
-                <div className="flex items-center justify-between gap-8">
-                    <Link href={"#"}>Skills</Link>
-                    <Link href={"#"}>Projects</Link>
-                    <Link href={"#"}>Education</Link>
-                    <Link href={"#"}>Contact Us</Link>
-                </div>
-            </div>
+
+            {/*navbar*/}
+            <Navbar/>
 
             {/*hero section*/}
             <div className="w-full flex-col md:flex-row flex justify-between items-center py-16 gap-5">
                 <div className="flex-1 flex justify-center flex-col xl:px-0 sm:px-16 px-6">
                     <div className="flex justify-between items-center w-full text-white mb-3">
-                        <h1 className="flex-1 font-semibold sm:text-[52px] text-[52px] text-black leading-[40px] [text-shadow:2px_2px_8px_white]">
+                        <h1 className="flex-1 font-semibold sm:text-[52px] text-[26px] text-black leading-[26px] sm:leading-[52px] [text-shadow:2px_2px_8px_white]">
                             Hi, there!<br className="sm:block hidden"/> I am
                         </h1>
                     </div>
 
-                    <h1 className="font-semibold sm:text-[68px] text-[52px] text-white sm:leading-[80px] leading-[80px] w-full [text-shadow:4px_4px_4px_black]">
+                    <h1 className="font-semibold text-[32px] md:text-[6vw] text-white sm:leading-[80px] leading-[32px] w-full [text-shadow:4px_4px_4px_black]">
                         <span className="name-gradient">Mubashir Khan</span>
                     </h1>
                     <p className="text-[18px] leading-[20.8px] max-w-[470px] mt-5 [text-shadow:4px_4px_8px_black]">
@@ -47,12 +35,12 @@ export default function Home() {
                 <div
                     className="group rounded-full relative bg-black shadow-xl shadow-black max-w-[400px] hover:shadow-2xl hover:shadow-[rgb(22, 189, 174)] transition-all duration-300">
                     <Image
-                        src={meImg}
+                        src={meImg1}
                         alt="MK Logo"
                         className="rounded-full  aspect-square object-contain transition-all duration-300 relative"
                     />
                     <Image
-                        src={meImg1}
+                        src={meImg}
                         alt="MK Logo"
                         className=" rounded-full  aspect-square object-contain hover:scale-110 duration-600 absolute inset-0 opacity-0 hover:opacity-100 transition-all"
                     />
@@ -61,14 +49,14 @@ export default function Home() {
             </div>
 
             {/*skill section*/}
-            <h1 className="mb-5 font-semibold sm:text-[55px] text-[45px] text-white sm:leading-[80px] leading-[80px] [text-shadow:4px_4px_4px_black]">Skills</h1>
+            <h1 id="skills" className=" scroll-mt-20 md:mb-5 font-semibold sm:text-[55px] text-[35px] text-white sm:leading-[80px] leading-[80px] [text-shadow:4px_4px_4px_black]">Skills</h1>
             <SkillsSection/>
 
             {/*projects*/}
             <ProjectsSection />
 
             {/*divider*/}
-            <div className="relative my-20">
+            <div className="relative my-8 md:my-20">
                 <div
                     className="w-full h-[2px]"
                     style={{

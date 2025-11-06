@@ -28,9 +28,9 @@ const projects = [
 
 export default function ProjectsSection() {
   return (
-      <div className="grid md:grid-cols-2 gap-8 mt-20 mx-auto max-w-[1100px]">
+      <div className="grid md:grid-cols-2 gap-8 mt-10 md:mt-20 mx-auto max-w-[1100px] scroll-mt-20" id="projects" >
         <div className="text-[22px]">
-          <h3 className="font-bold md:text-[45px] text-[45px] text-white md:leading-[80px] leading-[80px] [text-shadow:4px_4px_4px_black]">All Creative Works.</h3>
+          <h3 className="font-bold md:text-[45px] text-[45px] text-white md:leading-[80px] leading-[50px] [text-shadow:4px_4px_4px_black]">All Creative Works.</h3>
 
           <p className="responsive mt-1 [text-shadow:4px_4px_4px_black]">Here's some of my projects that I have worked on.</p>
 
@@ -39,7 +39,7 @@ export default function ProjectsSection() {
         </div>
 
         {projects.map((project, index) => (
-            <div className={`border border-white/40 shadow hover:shadow-xl shadow-cyan-400 transition-all duration-300 cursor-pointer hover:scale-105 w-full grid rounded-[10px] overflow-hidden bg-black p-8 ${index === 1 ? ' md:translate-y-[-30%] lg:translate-y-[-50%] ' : ''}`} key={index}>
+            <div className={`border border-white/40 shadow hover:shadow-xl shadow-cyan-400 transition-all duration-300 cursor-pointer hover:scale-105 w-full grid rounded-[10px] overflow-hidden bg-black p-4 md:p-8 ${index === 1 ? ' md:translate-y-[-30%] lg:translate-y-[-50%] ' : ''}`} key={index}>
               <Image src={project.image} alt="myimage" className="w-full aspect-video object-contain"/>
 
               <div className="flex justify-between items-center my-2">

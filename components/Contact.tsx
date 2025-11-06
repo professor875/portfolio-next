@@ -11,11 +11,10 @@ const detail = {
 
 export default function ContactSection() {
     return (
-
-        <div className="mx-auto w-full">
+        <div className="mx-auto w-full scroll-mt-20" id="contact" >
             <div
-                className="grid lg:grid-cols-2 items-start gap-12 p-8 mx-auto max-w-4xl max-lg:max-w-2xl bg-black/85 [box-shadow:0_2px_10px_-3px_white] rounded-xl">
-                <div className="flex flex-wrap justify-between items-start gap-12">
+                className="grid lg:grid-cols-2 items-start gap-12 p-4 md:p-8 mx-auto max-w-4xl max-lg:max-w-2xl bg-black/85 [box-shadow:0_2px_10px_-3px_white] rounded-xl">
+                <div className="flex flex-wrap justify-between items-start gap-6 md:gap-12">
                     <div>
                         <h2 className="text-cyan-400 text-3xl font-bold">Let's Talk</h2>
                         <p className="text-[15px] text-white/70 mt-4 leading-relaxed">{detail.description}</p>
