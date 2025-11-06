@@ -9,6 +9,21 @@ import icon from "@/public/mk.png";
 export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
+    const Navlinks = [
+        {
+            name: "Skills",
+            href: "#skills",
+        },
+        {
+            name: "Projects",
+            href: "#projects",
+        },
+        {
+            name: "Contact",
+            href: "#contact",
+        }
+    ]
+
     return (
         <div className="sticky top-5 md:top-10 z-50">
             {/* Top Navbar */}
@@ -24,9 +39,9 @@ export default function Navbar() {
 
                 {/* Desktop Nav */}
                 <div className="items-center justify-between gap-8 hidden md:inline-flex">
-                    <Link href={"#skills"}>Skills</Link>
-                    <Link href={"#projects"}>Projects</Link>
-                    <Link href={"#contact"}>Contact</Link>
+                    {Navlinks.map((link, index) => (
+                        <Link key={index} href={link.href}>{link.name}</Link>
+                    ))}
                 </div>
 
                 {/* Mobile Nav Button */}
@@ -63,27 +78,15 @@ export default function Navbar() {
                             transition={{duration: 0.4, ease: "easeInOut"}}
                             className="absolute w-full origin-top md:hidden bg-black/80 backdrop-blur-md border border-white/20 rounded-2xl mt-3 p-6 text-center space-y-4 shadow-lg"
                         >
-                            <Link
-                                href={"#skills"}
-                                onClick={() => setMenuOpen(false)}
-                                className="block hover:text-cyan-400 transition hover:bg-white/10 py-1"
-                            >
-                                Skills
-                            </Link>
-                            <Link
-                                href={"#projects"}
-                                onClick={() => setMenuOpen(false)}
-                                className="block hover:text-cyan-400 transition hover:bg-white/10 py-1"
-                            >
-                                Projects
-                            </Link>
-                            <Link
-                                href={"#contact"}
-                                onClick={() => setMenuOpen(false)}
-                                className="block hover:text-cyan-400 transition hover:bg-white/10 py-1"
-                            >
-                                Contact
-                            </Link>
+                            {Navlinks.map((link, index) => (
+                                <Link
+                                    href={link.href}
+                                    onClick={() => setMenuOpen(false)}
+                                    className="block hover:text-cyan-400 transition hover:bg-white/10 py-1"
+                                >
+                                    {link.name}
+                                </Link>
+                            ))}
                         </motion.div>
                     )}
                 </AnimatePresence>
