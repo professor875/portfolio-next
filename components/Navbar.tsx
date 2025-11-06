@@ -10,7 +10,7 @@ export default function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
 
     return (
-        <div className="sticky md:top-10 z-50">
+        <div className="sticky top-5 md:top-10 z-50">
             {/* Top Navbar */}
             <div
                 className=" top-10 p-1 px-8 border border-white/30 rounded-full mt-7 bg-black/80 shadow-lg text-xl font-bold flex justify-between items-center"
