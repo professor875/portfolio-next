@@ -21,7 +21,7 @@ export default function Home() {
                         </h1>
                     </div>
 
-                    <h1 className="font-semibold text-[32px] md:text-[6vw] text-white sm:leading-[80px] leading-[32px] w-full [text-shadow:4px_4px_4px_black]">
+                    <h1 className="font-semibold text-[32px] md:text-[6vw] text-white md:leading-[60px] lg:leading-[100px] leading-[32px] w-full [text-shadow:4px_4px_4px_black]">
                         <span className="name-gradient">Mubashir Khan</span>
                     </h1>
                     <p className="text-[18px] leading-[20.8px] max-w-[470px] mt-5 [text-shadow:4px_4px_8px_black]">
