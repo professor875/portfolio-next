@@ -88,7 +88,7 @@ export default function ContactSection() {
                            className="w-full text-white rounded-md py-2.5 px-4 border border-gray-300 text-sm outline-0 focus:border-cyan-500"/>
                     <input type='text' placeholder='Subject'
                            className="w-full text-white rounded-md py-2.5 px-4 border border-gray-300 text-sm outline-0 focus:border-cyan-500"/>
-                    <textarea placeholder='Message' rows="6"
+                    <textarea placeholder='Message' rows={6}
                               className="w-full text-white rounded-md px-4 border border-gray-300 text-sm pt-2.5 outline-0 focus:border-cyan-500"></textarea>
                     <button type='button'
                             className="text-white bg-cyan-600 hover:bg-cyan-700 rounded-md text-sm font-medium px-4 py-2.5 w-full cursor-pointer border-0 mt-2">Send
