@@ -8,10 +8,10 @@ interface Project {
     link: string;
 }
 
-export default function ProjectCard({project, index}: { project:Project, index: number }) {
+export default function ProjectCard({project, index, translate}: { project:Project, index: number, translate?:boolean }) {
     return (
         <Link href={project.link}
-            className={`border border-white/40 shadow hover:shadow-xl shadow-cyan-400 transition-all duration-300 cursor-pointer hover:scale-105 w-full grid rounded-[10px] overflow-hidden bg-black p-4 md:p-8 ${index % 2 == 0 ? ' md:translate-y-[-30%] lg:translate-y-[-20%] ' : ''}`}
+            className={`border border-white/40 shadow hover:shadow-xl shadow-cyan-400 transition-all duration-300 cursor-pointer hover:scale-105 w-full grid rounded-[10px] overflow-hidden bg-black p-4 md:p-8 ${index % 2 == 0 ? ' md:translate-y-[-30%] lg:translate-y-[-20%] ' : ''} ${index % 2 == 0 && translate ? ' md:translate-y-[-50%] lg:translate-y-[-50%] ' : ''}`}
             key={index}>
             <Image src={project.image} alt="myimage" className="w-full aspect-video object-contain"/>
 

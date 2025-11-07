@@ -2,8 +2,8 @@ import Image from "next/image";
 import meImg from "@/public/me.png"
 import meImg1 from "../public/me1.png"
 import SkillsSection from "../components/Skills";
-import ProjectsSection from "../components/Projects";
-import ContactSection from "../components/Contact";
+import ProjectsSection from "./Projects";
+import ContactSection from "./Contact";
 import Navbar from "../components/Navbar";
 
 export default function Home() {

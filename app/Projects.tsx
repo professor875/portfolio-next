@@ -2,7 +2,7 @@ import Image from "next/image";
 import me from "../public/me.png"
 import tabootv from "../public/tabootv/tabootv.webp";
 import Link from "next/link";
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../components/ProjectCard";
 
 const projects = [
     {
@@ -45,7 +45,7 @@ export default function ProjectsSection() {
             </div>
 
             {projects.map((project, index) => (
-                <ProjectCard project={project} index={index} key={index} />
+                <ProjectCard project={project} index={index + 1} key={index} translate={true} />
             ))}
         </div>
 
