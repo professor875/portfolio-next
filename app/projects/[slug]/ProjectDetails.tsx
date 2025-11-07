@@ -57,7 +57,7 @@ export default function ProjectDetails() {
     ]
 
     return (
-        <div className="grid grid-cols-8 md:grid-cols-12 gap-8 mt-6 w-full">
+        <div className="grid-cols-8 md:grid-cols-12 gap-8 mt-6 w-full hidden md:grid">
             <div className="col-span-8 space-y-6">
                 <MediumHeading id="overview">Overview</MediumHeading>
 
