@@ -33,18 +33,12 @@ export default function Home() {
                 </div>
 
                 <div
-                    className="group rounded-full relative bg-black shadow-xl shadow-black max-w-[400px] hover:shadow-2xl hover:shadow-[rgb(22, 189, 174)] transition-all duration-300">
+                    className="group rounded-full relative bg-black shadow-2xl shadow-black max-w-[400px]">
                     <Image
                         src={meImg1}
                         alt="MK Logo"
-                        className="rounded-full  aspect-square object-contain transition-all duration-300 relative"
+                        className="rounded-full aspect-square object-contain"
                     />
-                    <Image
-                        src={meImg}
-                        alt="MK Logo"
-                        className=" rounded-full  aspect-square object-contain hover:scale-110 duration-600 absolute inset-0 opacity-0 hover:opacity-100 transition-all"
-                    />
-
                 </div>
             </div>
 
