@@ -1,6 +1,6 @@
 import Image from "next/image";
 import me from "../public/me.png"
-import tabootv from "../public/tabootv.webp";
+import tabootv from "../public/tabootv/tabootv.webp";
 import Link from "next/link";
 
 const projects = [
@@ -29,7 +29,7 @@ const projects = [
 
 export default function ProjectsSection() {
     return (
-        <div className="grid md:grid-cols-2 gap-8 mt-10 md:mt-20 mx-auto max-w-[1100px] scroll-mt-20" id="projects">
+        <div className="grid md:grid-cols-2 gap-8 mt-10 md:mt-20 mx-auto max-w-[1100px] scroll-mt-[150px]" id="projects">
             <div className="text-[22px]">
                 <h3 className="font-bold md:text-[45px] text-[45px] text-white md:leading-[80px] leading-[50px] [text-shadow:4px_4px_4px_black]">All
                     Creative Works.</h3>

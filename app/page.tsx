@@ -1,10 +1,10 @@
 import Image from "next/image";
 import meImg from "@/public/me.png"
-import meImg1 from "@/public/me1.png"
-import SkillsSection from "@/components/Skills";
-import ProjectsSection from "@/components/Projects";
-import ContactSection from "@/components/Contact";
-import Navbar from "@/components/Navbar";
+import meImg1 from "../public/me1.png"
+import SkillsSection from "../components/Skills";
+import ProjectsSection from "../components/Projects";
+import ContactSection from "../components/Contact";
+import Navbar from "../components/Navbar";
 
 export default function Home() {
     return (<>
@@ -43,7 +43,7 @@ export default function Home() {
             </div>
 
             {/*skill section*/}
-            <h1 id="skills" className=" scroll-mt-20 md:mb-5 font-semibold sm:text-[55px] text-[35px] text-white sm:leading-[80px] leading-[80px] [text-shadow:4px_4px_4px_black]">Skills</h1>
+            <h1 id="skills" className=" scroll-mt-[150px] md:mb-5 font-semibold sm:text-[55px] text-[35px] text-white sm:leading-[80px] leading-[80px] [text-shadow:4px_4px_4px_black]">Skills</h1>
             <SkillsSection/>
 
             {/*projects*/}
